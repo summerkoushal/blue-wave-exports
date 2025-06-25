@@ -1,0 +1,197 @@
+/* global------------------------------------ */
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(0, 98, 255);
+}
+
+/* Navbar------------------------------------ */
+.nav-logo {
+    width: 45vw;
+}
+.nav-logo-img {
+    height: 65px;
+    width: 65px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.nav-dropdown-btn, .nav-dropdown {
+    display: none;
+}
+.nav-dropdown-img {
+    height: 25px;
+}
+.nav-links {
+    width: 50vw; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items : center;
+}
+@media screen and (max-width: 767px) {
+    .nav-logo {
+        width: calc(100vw - 80px);
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-dropdown-btn {
+        display: inline;
+        padding: 12px;
+        align-self: center;
+    }
+}
+/* Home------------------------------------ */
+/* about us------------------------------------ */
+.aboutus-container1 {
+    height: calc(100vh - 85px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aboutus-img {
+    height: 60%;
+    width: 40%;
+    box-shadow: -10px -10px 0px 0px #F6C344;
+    display: inline;
+}
+.aboutus-text-container {
+    width: 40%;
+    text-align: justify;
+}
+.aboutus-text-heading {
+    margin: 5px 0px;
+}
+.aboutus-text-subheading {
+    box-shadow: 45px 5px 0px 0px white, 0px 5px 0px 0px #EEC55C;
+    margin: 0px 0px 20px 0px;
+}
+.aboutus-container2 {
+    height: 85vh;          
+}
+.missionVision-container {
+    width: 75vw;
+    margin: auto;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+@media screen and (max-width: 2000px) {
+    /* large tablet */
+    .aboutus-img {
+        width: 45%;
+    }
+    .aboutus-text-container {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 991px) {
+    /* large tablet */
+    .aboutus-container1 {
+        height: 100%;
+    }
+    .aboutus-container1 {
+        flex-direction: column;
+    }
+    .aboutus-img {
+        width: 75%;
+        margin: 50px;
+    }
+    .aboutus-text-container {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* medium tablet */
+    .aboutus-img {
+        width: 85%;
+        margin: 30px;
+        box-shadow: -10px -10px 0px 0px #F6C344;
+    }
+    .aboutus-text-container {
+        width: 85%;
+    }
+}
+
+/* Products------------------------------------ */
+/* contact us------------------------------------ */
+.contact-info-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contact-info-cards {
+    margin: 30px;
+    padding: 15px 20px;
+    background-color: white;
+}
+.contact-div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+}
+.contact-map {
+    width: 35vw;
+    height: 35vw;
+}
+.contact-map-iframe {
+    height: 100%;
+    width: 100%;
+}
+.contact-form-div {
+    width: 35vw;
+}
+.contact-form-heading {
+    box-shadow: 45px 5px 0px 0px white, 0px 5px 0px 0px #F6C344;
+    margin-bottom: 25px;
+}
+.contact-form-input {
+    width: 45%;
+    margin: 15px 0px;
+}
+.contact-form {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+svg {
+    height: 30px;
+    width: 30px;
+}
+@media screen and (max-width: 767px) {
+    .contact-info-cards {
+        width: 85vw;
+        margin: 15px;
+        background-color: white;
+    }
+    .contact-div {
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .contact-map {
+        width: 85vw;
+        height: 85vw;
+        margin: auto;
+    }
+    .contact-form-div {
+        width: 85vw;
+        margin: auto;
+    }
+    .contact-form-heading {
+        margin-top: 30px;
+    }
+}
+
+/* Footer------------------------------------ */
+.footer {
+    text-align: center;
+    padding: 12px 0px 15px 0px;
+}
+.footer-span {
+    font-size: 12px;
+}
